@@ -3,7 +3,7 @@
     RootModule           = 'TelemetryHelper.psm1'
 	
     # Version number of this module.
-    ModuleVersion        = '1.3.0'
+    ModuleVersion        = '2.0.0'
 	
     CompatiblePSEditions = 'Core', 'Desktop'
 	
@@ -20,7 +20,7 @@
     Copyright            = 'Copyright (c) 2019 Jan-Hendrik Peters'
 	
     # Description of the functionality provided by this module
-    Description          = 'This module helps you integrate telemetry with ApplicationInsights into your own PowerShell module'
+    Description          = 'This module helps you integrate telemetry with ApplicationInsights or SQL server into your own PowerShell module'
 	
     # Minimum version of the Windows PowerShell engine required by this module
     PowerShellVersion    = '5.1'
@@ -29,6 +29,7 @@
     # this module
     RequiredModules      = @(
         @{ ModuleName = 'PSFramework'; ModuleVersion = '1.0.19' }
+        'dbatools'
     )
 	
     # Assemblies that must be loaded prior to importing this module
